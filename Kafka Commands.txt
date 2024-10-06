@@ -1,0 +1,12 @@
+Kafka :cmds 
+=======
+
+D:\Softwares\kafka_2.12-3.6.1\bin\windows>zookeeper-server-start.bat  zookeeper.properties
+
+D:\Softwares\kafka_2.12-3.6.1\bin\windows>kafka-server-start.bat  server.properties
+
+D:\Softwares\kafka_2.12-3.6.1\bin\windows>kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic demo-sbms-topic
+
+D:\Softwares\kafka_2.12-3.6.1\bin\windows>kafka-topics.bat --list --bootstrap-server localhost:9092
+
+D:\Softwares\kafka_2.12-3.6.1\bin\windows>kafka-topics.bat --delete --bootstrap-server localhost:9092 --topic javaguides_json
